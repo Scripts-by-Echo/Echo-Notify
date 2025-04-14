@@ -1,0 +1,52 @@
+#notify-container {
+    position: absolute;
+    bottom: 500px;
+    right: 40px;
+    width: 320px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    z-index: 9999;
+}
+
+.notify {
+    display: flex;
+    align-items: center;
+    background-color: rgba(20, 20, 20, 0.85);
+    color: white;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 36px;
+    animation: fadein 0.5s forwards, fadeout 0.5s forwards 4s;
+}
+
+.notify-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+/* Farbliche Border je nach Typ */
+.notify.success {
+    border: 2px solid #2ecc71; /* Grün */
+    box-shadow: 0 0 5px #2ecc71;
+}
+
+.notify.info {
+    border: 2px solid #d8db34; /* Gelb */
+    box-shadow: 0 0 5px #d8db34;
+}
+
+.notify.error {
+    border: 2px solid #e74c3c; /* Rot */
+    box-shadow: 0 0 5px #e74c3c;
+}
+
+@keyframes fadein {
+    from { opacity: 0; transform: translateX(30px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; transform: translateX(0); }
+    to   { opacity: 0; transform: translateX(30px); }
+}
