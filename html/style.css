@@ -25,19 +25,19 @@
     flex-shrink: 0;
 }
 
-/* Farbliche Border je nach Typ */
+
 .notify.success {
-    border: 2px solid #2ecc71; /* Grün */
+    border: 2px solid #2ecc71; 
     box-shadow: 0 0 5px #2ecc71;
 }
 
 .notify.info {
-    border: 2px solid #d8db34; /* Gelb */
+    border: 2px solid #d8db34; 
     box-shadow: 0 0 5px #d8db34;
 }
 
 .notify.error {
-    border: 2px solid #e74c3c; /* Rot */
+    border: 2px solid #e74c3c; 
     box-shadow: 0 0 5px #e74c3c;
 }
 
